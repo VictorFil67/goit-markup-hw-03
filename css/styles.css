@@ -79,10 +79,10 @@ img {
 .section {
 padding: 120px 0;
 }
-.section3 {
+.production {
     padding-bottom: 120px;
 }
-.section4 {
+.team {
     padding: 120px 0;
     background-color: var(--cloud);
 }
