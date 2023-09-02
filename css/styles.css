@@ -23,9 +23,6 @@ ul {
 a {
     text-decoration: none;
 }
-/*ul, ol {
-list-style-type: none;
-}*/
 img {
     display: block;
 }
@@ -38,10 +35,6 @@ img {
     --ocean: #404bbf;
     --white: #FFF;
 }
-/*.wrap {
-    padding: 0 156px;
-    margin-bottom: 120px;
-}*/
 .header {
     border-bottom: 1px solid var(--cornflower);
         background: var(--white);
@@ -56,8 +49,8 @@ img {
 .fl-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /*padding-top: 24px;
+    padding-bottom: 24px;*/
 }
 .visually-hidden {
     position: absolute;
@@ -73,7 +66,7 @@ img {
 }
 .fl-nav {
     display: flex;
-    gap: 76px;
+    align-items: center;
 }
 .fl-cont-list {
     display: flex;
@@ -83,12 +76,15 @@ img {
     display: flex;
         gap: 24px;
 }
-/*.marg {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}*/
 .section {
-padding-top: 120px;
+padding: 120px 0;
+}
+.section3 {
+    padding-bottom: 120px;
+}
+.section4 {
+    padding: 120px 0;
+    background-color: var(--cloud);
 }
 .section-port {
     padding-top: 96px;
@@ -104,6 +100,7 @@ padding-top: 120px;
         /* 116.667% */
         letter-spacing: 0.54px;
         text-transform: uppercase;
+        margin-right: 76px;
 }
 .link {
     text-decoration: none;
@@ -122,6 +119,8 @@ color: var(--navyblue);
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.32px;
+    display: inline-block;
+    padding: 24px 0;
 }
 .address {
     font-style: normal;
@@ -132,6 +131,8 @@ color: var(--navyblue);
         line-height: 1.5;
         /* 150% */
         letter-spacing: 0.32px;
+        display: inline-block;
+            padding: 24px 0;
 }
 .filters{
     justify-content: center;
@@ -162,6 +163,7 @@ color: var(--ocean);
 .filter:focus {
     color: var(--white);
 background: var(--ocean);
+border: 1px solid transparent;
 }
 .card-set {
     display: flex;
@@ -177,7 +179,7 @@ color: var(--navyblue);
     /* 120% */
     letter-spacing: 0.4px;
     text-align: center;
-    margin-top: 32px;
+    /*margin-top: 32px;*/
     margin-bottom: 8px;
 }
 .item-title-port {
@@ -188,8 +190,7 @@ color: var(--navyblue);
         /* 120% */
         letter-spacing: 0.4px;
         text-align: left;
-        margin: 32px 16px 8px 16px;
-        /*margin-bottom: 8px;*/
+        margin-bottom: 8px;
 }
 .item-text {
 font-size: 16px;
@@ -205,11 +206,11 @@ font-size: 16px;
         /* 150% */
         letter-spacing: 0.32px;
         color: var(--slate);
-        margin: 0 16px;
+        /*margin: 0 16px;*/
 }
 .hero-image {
     background-color: var(--navyblue);
-    padding: 188px 472px;
+    padding: 188px 0;
 }
 .last {
     padding-left: 141px;
@@ -218,8 +219,12 @@ font-size: 16px;
 }
 .foo {
     background-color: var(--navyblue);
-    padding: 101.5px 1005px 100px 141px;
-    padding-right: 1005px;
+    padding: 100px 0;
+}
+.foo .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+    margin-right: 0;
 }
 .title {
     color: var(--white);
@@ -228,7 +233,8 @@ font-size: 16px;
         line-height: 1.07;
         /* 107.143% */
         letter-spacing: 1.12px;
-        margin-bottom: 48px;
+        max-width: 496px;
+        margin: 0 auto 48px;
 }
 .serv {
         background: var(--iris);
@@ -239,6 +245,9 @@ font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.64px;
         cursor: pointer;
+        min-width: 169px;
+        height: 56px;
+        border: none;
         margin: 0 auto;
         padding: 16px 32px;
         border-radius: 4px;
@@ -257,29 +266,31 @@ letter-spacing: 0.72px;
 text-transform: capitalize;
 margin-bottom: 72px;
 }
-/*.item-four {
+.item-four {
     width: calc((100% - 72px) / 4);
-}*/
+}
 .item-three {
     width: calc((100% - 2 * 24px) / 3);
 }
 .item {
-    width: calc((100% - 2 * 24px) / 3);
-    padding-bottom: 32px;
-    border: 1px solid var(--cornflower);
+    width: calc((100% - 48px) / 3);
+    /*padding-bottom: 32px;*/
+    /*border: 1px solid var(--cornflower);*/
         background: var(--white);
 }
-.team {
-    
-    padding-top: 120px;
-    padding-bottom: 120px;
+.app {
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower);
+    border-top: none;
 }
 .member {
     background-color: var(--white);
-    width: calc((100% - 2 * 24px) / 3);
-    padding-bottom: 32px;
+    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.employee {
+    padding: 32px 0;
 }
 .foo .studio {
             color: var(--cloud);
@@ -289,5 +300,5 @@ margin-bottom: 72px;
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.32px;
-    margin-top: 17.5px;
+    max-width: 264px;
 }
